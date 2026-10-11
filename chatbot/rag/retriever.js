@@ -57,7 +57,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'signatures',
     category: 'Signature Dishes',
-    keywords: ['signature', 'popular', 'best', 'favorite', 'recommend', 'top', 'starters', 'dishes'],
+    keywords: ['signature', 'popular', 'best', 'favorite', 'recommend', 'top', 'starters', 'dishes', 'menu', 'food', 'serve', 'eat', 'items', 'price'],
     content: `CHEF'S SIGNATURE SELECTION:
 1. Croissant Maison (Rs. 799) — Buttery French croissant filled with grilled chicken, melted brie cheese, crisp lettuce, and Dijon cream. [Rating: 5.0]
 2. Poulet Fettuccine (Rs. 999) — Creamy hand-crafted fettuccine with garlic-infused grilled chicken breast, Parmigiano-Reggiano, and rich herb cream sauce. [Rating: 4.9]
@@ -67,7 +67,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-breakfast',
     category: 'Petit Déjeuner',
-    keywords: ['breakfast', 'petit', 'dejeuner', 'morning', 'croissant', 'egg', 'eggs', 'toast', 'french toast', 'jam'],
+    keywords: ['breakfast', 'petit', 'dejeuner', 'morning', 'croissant', 'egg', 'eggs', 'toast', 'french toast', 'jam', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `PETIT DÉJEUNER (Breakfast Menu):
 - Croissant & Eggs: Buttery French croissant served with fluffy scrambled eggs and fresh garden herbs. (Rs. 599 | Rating: 4.8)
 - Parisian Breakfast: Warm artisanal croissant, velvety scrambled eggs, seasonal berry compote, French butter, and house jam. (Rs. 799 | Rating: 4.9)
@@ -76,7 +76,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-croissants-sandwiches',
     category: 'Croissants & Sandwiches',
-    keywords: ['croissant', 'sandwich', 'baguette', 'parisien', 'poulet', 'club', 'brie', 'cheddar'],
+    keywords: ['croissant', 'sandwich', 'baguette', 'parisien', 'poulet', 'club', 'brie', 'cheddar', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `CROISSANTS & SANDWICHES:
 - Croissant Maison (Signature): Grilled chicken, melted brie cheese, crisp lettuce, Dijon cream inside a buttery French croissant. (Rs. 799 | Rating: 5.0)
 - Le Parisien: Crispy French baguette with tender chicken, aged Emmental cheese, rocket, and house mustard cream. (Rs. 749 | Rating: 4.7)
@@ -86,7 +86,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-pasta',
     category: 'Pasta',
-    keywords: ['pasta', 'fettuccine', 'truffle', 'champignons', 'mushroom', 'provençale', 'cream', 'parmesan'],
+    keywords: ['pasta', 'fettuccine', 'truffle', 'champignons', 'mushroom', 'provençale', 'cream', 'parmesan', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `PASTA SELECTION:
 - Poulet Fettuccine (Signature): Creamy hand-crafted fettuccine with garlic-infused grilled chicken breast, Parmigiano-Reggiano, and rich herb cream sauce. (Rs. 999 | Rating: 4.9)
 - Fettuccine aux Champignons: Al dente fettuccine with wild sautéed cremini and button mushrooms, parmesan, and smooth white cream sauce. (Rs. 949 | Rating: 4.8)
@@ -96,7 +96,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-burgers',
     category: 'Gourmet Burgers',
-    keywords: ['burger', 'burgers', 'royale', 'beef', 'chicken', 'crispy', 'bordeaux', 'bbq', 'cheddar', 'brioche'],
+    keywords: ['burger', 'burgers', 'royale', 'beef', 'chicken', 'crispy', 'bordeaux', 'bbq', 'cheddar', 'brioche', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `GOURMET BURGERS:
 - Le Royale (Signature): Gourmet prime beef patty, 18-month aged cheddar, slow-caramelized onions, and signature Maison Élan truffle sauce. (Rs. 999 | Rating: 4.9)
 - Poulet Crispy: Golden crispy fried chicken fillet, butter lettuce, melted French brie, and tangy Dijon mayonnaise on brioche. (Rs. 849 | Rating: 4.8)
@@ -105,7 +105,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-european-plates',
     category: 'European Plates',
-    keywords: ['plate', 'plates', 'poulet', 'crème', 'chicken', 'roasted', 'herb', 'mushroom', 'main', 'mains', 'potatoes'],
+    keywords: ['plate', 'plates', 'poulet', 'crème', 'chicken', 'roasted', 'herb', 'mushroom', 'main', 'mains', 'potatoes', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `EUROPEAN PLATES (Main Courses):
 - Poulet à la Crème: Pan-seared tender chicken breast simmered in a creamy garlic & thyme herb sauce, served with rosemary roasted potatoes. (Rs. 1,199 | Rating: 4.9)
 - Herb Roasted Chicken: Half chicken marinated with Herbes de Provence, served alongside roasted root vegetables and crispy garlic butter potatoes. (Rs. 1,149 | Rating: 4.8)
@@ -114,7 +114,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-sides',
     category: 'Sides',
-    keywords: ['side', 'sides', 'frites', 'fries', 'truffle fries', 'pommes', 'garlic baguette', 'croquettes', 'mozzarella'],
+    keywords: ['side', 'sides', 'frites', 'fries', 'truffle fries', 'pommes', 'garlic baguette', 'croquettes', 'mozzarella', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `SIDES:
 - Pommes Frites: Classic French thin-cut skin-on golden potatoes dusted with sea salt. (Rs. 299 | Rating: 4.7)
 - Truffle Fries: Crispy French frites tossed in white truffle oil, shaved parmesan cheese, and fresh parsley. (Rs. 549 | Rating: 4.9)
@@ -124,7 +124,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-desserts',
     category: 'Desserts',
-    keywords: ['dessert', 'desserts', 'sweet', 'tart', 'chocolate', 'tarte', 'brûlée', 'creme brulee', 'cheesecake', 'lotus', 'pavlova', 'berry'],
+    keywords: ['dessert', 'desserts', 'sweet', 'tart', 'chocolate', 'tarte', 'brûlée', 'creme brulee', 'cheesecake', 'lotus', 'pavlova', 'berry', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `DESSERTS:
 - Tarte au Chocolat (Signature): Rich dark chocolate tart featuring 70% Valrhona ganache, crisp pastry shell, and Madagascar vanilla bean cream. (Rs. 649 | Rating: 5.0)
 - Crème Brûlée: Classic Parisian vanilla bean custard baked under a delicate shell of burnt caramel sugar. (Rs. 599 | Rating: 4.9)
@@ -134,7 +134,7 @@ Price: Rs. 2,499 (Regular Value: Rs. 2,899 — Save Rs. 400).`
   {
     id: 'menu-drinks',
     category: 'Coffee & Drinks',
-    keywords: ['coffee', 'drink', 'drinks', 'latte', 'espresso', 'cappuccino', 'mocha', 'café', 'creme', 'iced tea', 'lemonade', 'shake', 'milkshake', 'vanilla'],
+    keywords: ['coffee', 'drink', 'drinks', 'latte', 'espresso', 'cappuccino', 'mocha', 'café', 'creme', 'iced tea', 'lemonade', 'shake', 'milkshake', 'vanilla', 'menu', 'food', 'dishes', 'serve', 'eat', 'items', 'price'],
     content: `COFFEE & DRINKS:
 - Café Crème: Traditional French espresso cut with velvety steamed milk and fine foam layer. (Rs. 349 | Rating: 4.8)
 - Cappuccino: Double shot of house dark roast espresso topped with rich micro-foamed milk and cocoa dust. (Rs. 399 | Rating: 4.8)
@@ -192,16 +192,40 @@ function scoreChunk(chunk, queryTokens) {
 }
 
 /**
- * Retrieves top K context chunks from data.txt based on query
+ * Retrieves top K context chunks based on query.
+ * If broad menu intent is detected, loads ALL menu chunks into context regardless of score.
  */
-export function retrieveContext(query, topK = 4) {
+export function retrieveContext(query, topK = 10) {
   if (!query || typeof query !== 'string') {
-    return KNOWLEDGE_BASE.slice(0, topK).map(c => c.content).join('\n\n');
+    const selected = KNOWLEDGE_BASE.slice(0, topK);
+    console.log('[RAG Retriever] Retrieved chunk IDs (default):', selected.map(c => c.id));
+    return selected.map(c => c.content).join('\n\n---\n\n');
+  }
+
+  const normalizedQuery = query.toLowerCase();
+
+  // Broad-menu rule before scoring:
+  // If the user message contains "menu", "what do you serve", "what food", "dishes", or "what can i eat",
+  // load ALL menu chunks (breakfast, lunch, dinner, pasta, burgers, desserts, drinks) into context.
+  const isBroadMenu =
+    normalizedQuery.includes('menu') ||
+    normalizedQuery.includes('what do you serve') ||
+    normalizedQuery.includes('what food') ||
+    normalizedQuery.includes('dishes') ||
+    normalizedQuery.includes('what can i eat');
+
+  if (isBroadMenu) {
+    // All menu chunks: signatures, breakfast, croissants & sandwiches (lunch), pasta, burgers, european plates (dinner/mains), sides, desserts, drinks
+    const selected = KNOWLEDGE_BASE.filter(chunk =>
+      chunk.id.startsWith('menu-') || chunk.id === 'signatures'
+    );
+    const chunkIds = selected.map(c => c.id);
+    console.log(`[RAG Retriever] Broad-menu rule triggered for query "${query}". Retrieved chunk IDs (${selected.length}):`, chunkIds);
+    return selected.map(c => c.content).join('\n\n---\n\n');
   }
 
   // Tokenize & normalize query
-  const queryTokens = query
-    .toLowerCase()
+  const queryTokens = normalizedQuery
     .replace(/[^a-z0-9\s]/g, ' ')
     .split(/\s+/)
     .filter(t => t.length > 1);
@@ -226,6 +250,9 @@ export function retrieveContext(query, topK = 4) {
       KNOWLEDGE_BASE.find(c => c.id === 'hours-location'),
     ].filter(Boolean);
   }
+
+  const chunkIds = selected.map(c => c.id);
+  console.log(`[RAG Retriever] Retrieved chunk IDs for query "${query}" (${selected.length}):`, chunkIds);
 
   return selected.map(c => c.content).join('\n\n---\n\n');
 }

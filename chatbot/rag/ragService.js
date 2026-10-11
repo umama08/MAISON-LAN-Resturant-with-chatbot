@@ -29,8 +29,10 @@ function cleanModelResponse(text) {
  * @returns {Promise<{ answer: string, context: string, modelUsed: string }>}
  */
 export async function generateRAGResponse(userMessage, history = []) {
-  // Step 1: Retrieve relevant context from data.txt
-  const retrievedContext = retrieveContext(userMessage, 4);
+  // Step 1: Retrieve relevant context (raised topK so full menu fits)
+  const retrievedContext = retrieveContext(userMessage, 12);
+
+  const isMenuQuery = /menu|serve|food|dishes|eat|items|price|breakfast|lunch|dinner|pasta|burger|dessert|drink|order/i.test(userMessage);
 
   // System Prompt with Knowledge Context
   const systemPrompt = `You are the AI Concierge for Maison Élan, a modern French-European bistro in Karachi.
@@ -49,6 +51,7 @@ RULES:
 FORMATTING RULES (strictly follow these):
 - Do NOT use asterisks (*) or any markdown symbols whatsoever.
 - Do NOT use bullet dashes (-) or numbered lists.
+- For general menu questions, list every menu section with its dishes and prices.
 - For menu responses: write each section title (e.g. Petit Déjeuner, Européan Plates) on its own line, followed by a blank line.
 - Write each dish on its own line in this format: Dish Name — Short description. Rs. XXX
 - Leave one blank line between each dish entry.
@@ -79,7 +82,7 @@ ${retrievedContext}`;
         model: modelName,
         messages: apiMessages,
         temperature: 0.6,
-        max_tokens: 450,
+        max_tokens: 1200,
       }),
     });
 
@@ -93,11 +96,16 @@ ${retrievedContext}`;
     return cleanModelResponse(content);
   }
 
+  // Ensure menu queries never fall back to generic greeting Maître d' message
+  const defaultFallbackAnswer = isMenuQuery
+    ? "Maison Élan offers Petit Déjeuner (breakfast), Croissants & Sandwiches, Pasta, Gourmet Burgers, European Plates, Sides, Desserts, and Coffee & Drinks. Please let me know which section you'd like more details on!"
+    : "Bonjour! How may I assist your dining experience at Maison Élan today?";
+
   try {
     // Try Primary Model (openai/gpt-oss-20b)
     const answer = await callGroqAPI(PRIMARY_MODEL);
     return {
-      answer: answer || "Bonjour! How may I assist your dining experience at Maison Élan today?",
+      answer: answer || defaultFallbackAnswer,
       context: retrievedContext,
       modelUsed: PRIMARY_MODEL,
     };
@@ -107,14 +115,16 @@ ${retrievedContext}`;
       // Try Fallback Model (qwen/qwen3.6-27b)
       const answer = await callGroqAPI(FALLBACK_MODEL);
       return {
-        answer: answer || "Bonjour! Welcome to Maison Élan. How can I help you today?",
+        answer: answer || defaultFallbackAnswer,
         context: retrievedContext,
         modelUsed: FALLBACK_MODEL,
       };
     } catch (fallbackErr) {
       console.error('[RAG Service] Both primary and fallback models failed:', fallbackErr);
       return {
-        answer: "Bonjour! I am currently assisting several guests. Please call us directly at +92 300 1234567 or explore our menu and reservation section online.",
+        answer: isMenuQuery
+          ? "Our full menu is available on our website and includes Petit Déjeuner, Croissants, Pasta, Burgers, European Plates, Desserts, and Coffee. You can also reach our host at +92 300 1234567."
+          : "Bonjour! I am currently assisting several guests. Please call us directly at +92 300 1234567 or explore our menu and reservation section online.",
         context: retrievedContext,
         modelUsed: 'none',
       };
