@@ -164,7 +164,6 @@ MAISON-LAN-Resturant-with-chatbot/
 |---|---|---|
 | `VITE_GROQ_API_KEY` | Your Groq API key from [console.groq.com](https://console.groq.com) | ✅ Yes |
 
-> ⚠️ **Never commit your `.env` file.** It is already excluded by `.gitignore`.
 
 ---
 
